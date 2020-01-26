@@ -11,7 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace IdentityServerCenter
+namespace ClientCredentialApi
 {
     public class Startup
     {
@@ -26,10 +26,6 @@ namespace IdentityServerCenter
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddIdentityServer()
-                .AddDeveloperSigningCredential()
-                .AddInMemoryApiResources(Config.GetResources())
-                .AddInMemoryClients(Config.GetClients());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -39,8 +35,6 @@ namespace IdentityServerCenter
             {
                 app.UseDeveloperExceptionPage();
             }
-
-            app.UseIdentityServer();
 
             app.UseHttpsRedirection();
 
