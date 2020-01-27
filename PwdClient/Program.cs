@@ -25,11 +25,11 @@ namespace PwdClient
             tClient.BaseAddress = new Uri("http://localhost:5000/connect/token");
             var tokenClient = new TokenClient(tClient, new TokenClientOptions()
             {
-                ClientId = "client",
+                ClientId = "PasswordClient",
                 ClientSecret = "secret"
             });
             //var tokenResponse = tokenClient.RequestClientCredentialsAsync("api");
-            var tokenResponse = tokenClient.RequestClientCredentialsTokenAsync("api").Result;
+            var tokenResponse = tokenClient.RequestPasswordTokenAsync("davy","123456","api").Result;
 
             if (tokenResponse.IsError)
             {
