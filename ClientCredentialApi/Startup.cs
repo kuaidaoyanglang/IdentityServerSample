@@ -28,7 +28,9 @@ namespace ClientCredentialApi
             services.AddAuthentication("Bearer")
                 .AddIdentityServerAuthentication(options =>
                 {
-
+                    options.Authority = "https://localhost:5003";
+                    options.RequireHttpsMetadata = true;
+                    options.ApiName = "api";
                 });
             services.AddControllers();
         }
@@ -40,6 +42,8 @@ namespace ClientCredentialApi
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            //app.UseIdentityServer();
 
             app.UseHttpsRedirection();
 
