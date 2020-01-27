@@ -35,7 +35,7 @@ namespace IdentityServerCenter
 
             app.UseIdentityServer();
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
 
             app.UseRouting();
 
