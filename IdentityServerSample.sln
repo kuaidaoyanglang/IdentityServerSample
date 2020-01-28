@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClientCredentialApi", "Clie
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThirdPartDemo", "ThirdPartDemo\ThirdPartDemo.csproj", "{F6866ACF-5619-4AB6-BA87-39135D39853D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PwdClient", "PwdClient\PwdClient.csproj", "{E488A74C-F2CA-4B8C-9BB4-8736053C43BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PwdClient", "PwdClient\PwdClient.csproj", "{E488A74C-F2CA-4B8C-9BB4-8736053C43BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityServerSample", "IdentityServerSample\IdentityServerSample.csproj", "{C79F14F5-D964-4F67-8AB5-CFB8F736C4A2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{E488A74C-F2CA-4B8C-9BB4-8736053C43BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E488A74C-F2CA-4B8C-9BB4-8736053C43BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E488A74C-F2CA-4B8C-9BB4-8736053C43BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C79F14F5-D964-4F67-8AB5-CFB8F736C4A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C79F14F5-D964-4F67-8AB5-CFB8F736C4A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C79F14F5-D964-4F67-8AB5-CFB8F736C4A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C79F14F5-D964-4F67-8AB5-CFB8F736C4A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
