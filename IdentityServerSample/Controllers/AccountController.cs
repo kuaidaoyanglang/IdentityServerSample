@@ -21,11 +21,5 @@ namespace IdentityServerSample.Controllers
         {
             return View();
         }
-        // GET: /<controller>/
-        [HttpPost]
-        public IActionResult Login()
-        {
-            return View();
-        }
     }
 }
