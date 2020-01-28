@@ -51,8 +51,7 @@ namespace IdentityServerSample.Models
     {
         [Required]
         [Display(Name = "电子邮件")]
-        [EmailAddress]
-        public string Email { get; set; }
+        public string UserName { get; set; }
 
         [Required]
         [DataType(DataType.Password)]
