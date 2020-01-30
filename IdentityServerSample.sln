@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServerSample2", "Id
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityServerSample3", "IdentityServerSample3\IdentityServerSample3.csproj", "{D92B2F35-729C-4BAB-9117-44689973C759}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityServerSampleClient", "IdentityServerSampleClient\IdentityServerSampleClient.csproj", "{79DF0D11-825A-4392-945F-3FA87BCFFAFE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{D92B2F35-729C-4BAB-9117-44689973C759}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D92B2F35-729C-4BAB-9117-44689973C759}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D92B2F35-729C-4BAB-9117-44689973C759}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79DF0D11-825A-4392-945F-3FA87BCFFAFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79DF0D11-825A-4392-945F-3FA87BCFFAFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79DF0D11-825A-4392-945F-3FA87BCFFAFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79DF0D11-825A-4392-945F-3FA87BCFFAFE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
