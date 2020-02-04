@@ -5,6 +5,7 @@ using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using IdentityModel;
+using IdentityServer4;
 using IdentityServer4.Models;
 using IdentityServer4.Test;
 
@@ -32,7 +33,13 @@ namespace IdentityServerSample
                     {
                         new Secret("secret".Sha256())
                     },
-                    AllowedScopes = {"api"}
+                    RedirectUris = {"http://localhost:5001/signin-oidc"},
+                    PostLogoutRedirectUris = {"http://localhost:5001/signout-callback-oidc"},
+                    AllowedScopes =
+                    {
+                        IdentityServerConstants.StandardScopes.Profile,
+                        IdentityServerConstants.StandardScopes.OpenId
+                    }
                 },
                 //new Client
                 //{

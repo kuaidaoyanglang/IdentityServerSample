@@ -50,7 +50,7 @@ namespace IdentityServerSample.Models
     public class LoginViewModel
     {
         [Required]
-        [Display(Name = "电子邮件")]
+        [Display(Name = "用户名")]
         public string UserName { get; set; }
 
         [Required]
@@ -65,7 +65,7 @@ namespace IdentityServerSample.Models
     public class RegisterViewModel
     {
         [Required]
-        [Display(Name = "电子邮件")]
+        [Display(Name = "用户名")]
         public string UserName { get; set; }
 
         [Required]
