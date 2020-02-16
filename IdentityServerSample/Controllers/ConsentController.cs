@@ -32,10 +32,10 @@ namespace IdentityServerSample.Controllers
 
             var client = await _clientStore.FindEnabledClientByIdAsync(request.ClientId);
             var resource = await _resourceStore.FindEnabledResourcesByScopeAsync(request.ScopesRequested);
-            return CreateConcentViewModel(request, client, resource);
+            return CreateConsentViewModel(request, client, resource);
         }
 
-        private ConsentViewModel CreateConcentViewModel(AuthorizationRequest request,Client client,Resources resources)
+        private ConsentViewModel CreateConsentViewModel(AuthorizationRequest request,Client client,Resources resources)
         {
             var vm = new ConsentViewModel();
             vm.ClientName = client.ClientName;
