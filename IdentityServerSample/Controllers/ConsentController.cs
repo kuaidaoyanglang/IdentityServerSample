@@ -38,6 +38,7 @@ namespace IdentityServerSample.Controllers
         private ConsentViewModel CreateConsentViewModel(AuthorizationRequest request,Client client,Resources resources)
         {
             var vm = new ConsentViewModel();
+            vm.ClientId = client.ClientId;
             vm.ClientName = client.ClientName;
             vm.ClientLogoUrl = client.LogoUri;
             vm.ClientUrl = client.ClientUri;
