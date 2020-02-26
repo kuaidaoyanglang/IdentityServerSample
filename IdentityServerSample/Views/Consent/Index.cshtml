@@ -1,14 +1,52 @@
-﻿
+﻿@using IdentityServerSample.Models
+@model ConsentViewModel
 @{
     ViewData["Title"] = "Index";
 }
 
 <h1>Consent Index</h1>
 
-<div class="row">
-
+<div class="row page-header">
+    <div class="col-md-10">
+        @if (string.IsNullOrWhiteSpace(Model.ClientLogoUrl))
+        {
+            <div><img src="@Model.ClientLogoUrl"/></div>
+        }
+        <h1>
+            @Model.ClientName
+            <small>希望使用您的账户权限！</small>
+        </h1>
+    </div>
 </div>
 
 <div class="row">
+    <div class="col-md-8">
+        <form asp-action="Index">
+            @if (Model.IdentityResources.Any())
+            {
+                <ul class="list-group">
+                    @foreach (var item in Model.IdentityResources)
+                    {
 
+                    }
+                </ul>
+            }
+            @if (Model.ApiResources.Any())
+            {
+                <div class="panel">
+                    <div class="panel-heading">
+                        <span class="glyphicon glyphicon-tasks"></span>
+                        应用权限
+                    </div>
+                    <ul class="list-group">
+                        @foreach (var item in Model.ApiResources)
+                        {
+                            @Html.Partial( "_ScopeListItem", item)
+                        }
+                    </ul>
+                </div>
+                
+            }
+        </form>
+    </div>
 </div>
